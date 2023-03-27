@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.navbar-brand {
+    margin-right: 300px !important;
+}
+
+#showcase {
+    margin:4rem 0 2rem;
+    color: white;
+    padding: 2rem;
+    background: url('img/1.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+}
+
+#showcase .showcase-content p {
+    margin-bottom: 16px;
+}
+
+#home-articles .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container>*:first-child,
+#home-articles .articles-container>*:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: span 2;
+    align-items: center;
+}
+
+#home-articles .articles-container>*:last-child {
+    grid-column: span 2;
+}
+
+#home-articles p {
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+#home-articles a {
+    color: #333;
+    text-decoration: none;
+}
+
+#home-articles h3 {
+    color: #333;
+    margin-bottom: .75rem;
+    line-height: 1.3;
+}
+
+#home-articles .bg-dark a, .bg-dark h3, .bg-dark p{
+    color: #fff !important;
+}
+
+.card{
+    padding: 1rem;
+}
+
+.category {
+    color: #fff;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.category-sports {
+    background: #f99500;
+}
+
+.category-ent {
+    background: #a66bbe;
+}
+
+.category-tech {
+    background: #009cff;
+}
+
+.slide-top {
+    opacity: 0;
+    transform: translateY(120px);
+    transition: all 1s;
+}
+
+.slide-top-show {
+    opacity: 1;
+    transform: translateY(0);
+}
